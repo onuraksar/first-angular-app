@@ -1,0 +1,16 @@
+.counter {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid grey;
+    max-width: 220px;
+}
+.counter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.counter-checkbox-wrapper {
+    margin-top: 8px;
+}
