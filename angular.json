@@ -38,6 +38,8 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "dist/first-ng-app",
+              "baseHref": "/first-angular-app/",
               "budgets": [
                 {
                   "type": "initial",
