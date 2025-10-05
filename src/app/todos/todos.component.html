@@ -3,6 +3,13 @@
         <p>{{todo.title}}</p>
     } -->
     @for(todo of todoItems(); track todo.id) {
-        <p>{{todo.title}}</p>
+        <div class="todo-item">
+            <input id="todo-{{todo.id}}" type="checkbox" [checked] ="todo.completed" />
+            <label for="todo-{{todo.id}}">{{todo.title}}</label>
+        </div>
     }
+    <div> 
+        <input id="todo-input" type="text" (input)="onChange($event)" value="{{todoItemText()}}" /> 
+        <button (click)="onSubmit()">Add</button>
+    </div>
 </div>
